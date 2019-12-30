@@ -1,0 +1,45 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": false,
+    "codeFrame": false
+  },
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["prettier", "react"],
+  "env": {
+    "browser": true,
+    "jest": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "rules": {
+    "prefer-promise-reject-errors": ["off"],
+    "react/prop-types": ["warn"],
+    "no-console": "off",
+    "no-tabs": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "comma-dangle": ["error", "never"],
+    "arrow-parens": [2, "always"],
+    "arrow-body-style": ["error", "as-needed"],
+    "prettier/prettier": "error",
+    "linebreak-style": 0,
+    "max-classes-per-file": ["off"],
+    "no-useless-catch": ["off"],
+    "for-direction": ["off"],
+    "getter-return": ["off"],
+    "no-async-promise-executor": ["off"],
+    "no-compare-neg-zero": ["off"],
+    "no-misleading-character-class": ["off"],
+    "no-buffer-constructor": ["off"],
+    "lines-between-class-members": ["off"],
+    "prefer-object-spread": ["off"],
+    "react/jsx-fragments": ["off"],
+    "jsx-a11y/click-events-have-key-events": ["off"],
+    "jsx-a11y/no-noninteractive-element-interactions": ["off"],
+    "template-curly-spacing": "off",
+    "indent": "off",
+    "react/jsx-one-expression-per-line": "off"
+  }
+}
