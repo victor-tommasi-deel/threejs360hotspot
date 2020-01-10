@@ -20,7 +20,7 @@ class App extends React.Component {
     const ringOne = createRing(11, 3.1, 16, 100, 0x469ed7);
     const sphere = createSphere();
     const start = createStaturn(sphere, [ringOne]);
-    const viewer = document.getElementById('viewer');
+    const { viewer } = this.refs;
     viewer.appendChild(start.renderer.domElement);
     const { renderer, scene, camera, raycaster, mouse } = start;
     this.setState({
